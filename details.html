@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+          margin: 0;
+          min-height: 100vh; /* Allow content to grow beyond the viewport height */
+          overflow-y: auto; /* Enable vertical scrolling */
+          display: flex;
+          flex-direction: column; /* Ensure content stacks vertically */
+          font-family: Arial, sans-serif;
+          background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+          background-size: 400% 400%;
+          animation: lavaLamp 15s ease infinite;
+        }
+      
+        @keyframes lavaLamp {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+      </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-center mb-4">Details</h1>
+    <div class="container mt-4">
+        <div class="d-flex justify-content-center">
+          <a href="index.html" class="btn btn-primary mx-2">Home</a>
+          <a href="details.html" class="btn btn-secondary mx-2">Details</a>
+          <a href="new-animal-form.html" class="btn btn-success mx-2">New Animal</a>
+          <a href="about.html" class="btn btn-info mx-2">About</a>
+        </div>
+      </div>
+
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+ <div class="col-md-4 mb-4">
+    <div class="card">
+      <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Animal 2">
+      <div class="card-body">
+        <h5 class="card-title">Axoltl</h5>
+        <p class="card-text">Axolotls are freshwater salamanders from Mexico, known for their regeneration of limbs, spinal cord, heart, and other organs. They are also known as the "Mexican walking fish," though they aren't fish; they are amphibians. Axolotls are special because they possess the quality of neoteny, i.e., they never lose their larval characteristics, like the external gills, even after maturation. They are endangered critically in the wild because of the loss of habitats and because of pollution, but they are very successful in captivity and find great use in scientific studies and exotic pets. Axolotls appear in an array of colors like wild-type, leucistic, albino, and melanoid and make for very interesting subjects for observations.</p>
+      </div>
+    </div>
+  </div>
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
